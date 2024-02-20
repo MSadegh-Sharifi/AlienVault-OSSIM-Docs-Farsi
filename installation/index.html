@@ -1,0 +1,547 @@
+
+<!doctype html>
+<html lang="fa" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>نصب و راه‌اندازی - داکیومنت فارسی OSSIM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vazirmatn:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Vazirmatn";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="نصب و راه‌اندازی - داکیومنت فارسی OSSIM" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="./assets/images/social/installation.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="None" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="نصب و راه‌اندازی - داکیومنت فارسی OSSIM" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="./assets/images/social/installation.png" >
+      
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          پرش به محتویات
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="سرتیتر">
+    <a href=".." title="داکیومنت فارسی OSSIM" class="md-header__button md-logo" aria-label="داکیومنت فارسی OSSIM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            داکیومنت فارسی OSSIM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              نصب و راه‌اندازی
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="زبانه‌ها" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  خانه
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  نصب و راه‌اندازی
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="هدایت" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="داکیومنت فارسی OSSIM" class="md-nav__button md-logo" aria-label="داکیومنت فارسی OSSIM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    داکیومنت فارسی OSSIM
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    خانه
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    نصب و راه‌اندازی
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    نصب و راه‌اندازی
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="فهرست موضوعات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      فهرست موضوعات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ساخت و پیکربندی ماشین مجازی
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ossim" class="md-nav__link">
+    <span class="md-ellipsis">
+      نصب OSSIM
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">نصب و راه‌اندازی</h1>
+<p>در این آموزش، می‌خواهیم AlienVault OSSIM را با استفاده از VMware Workstation Pro راه اندازی کنیم.</p>
+<h2 id="_2">ساخت و پیکربندی ماشین مجازی</h2>
+<p>ابتدا فایل <code>AlienVault_OSSIM_64bits.iso</code> را از <a href="https://cybersecurity.att.com/products/ossim/download">OSSIM Download</a> دانلود کنید.</p>
+<ol>
+<li>VMware را اجرا کنید و <code>Create a New Virtual Machine</code> را بزنید.  </li>
+</ol>
+<p><a class="glightbox" href="../assets/vmware1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware1" src="../assets/vmware1.png" style="height:480px" /></a><br />
+2. <code>Typical</code> را انتخاب کرده و <code>Next</code> را بزنید.</p>
+<p><a class="glightbox" href="../assets/vmware2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware1" src="../assets/vmware2.png" style="height:480px" /></a><br />
+3. فایل <code>AlienVault_OSSIM_64bits.iso</code> را انتخاب کرده و <code>Next</code> را بزنید.  </p>
+<p><a class="glightbox" href="../assets/vmware3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware1" src="../assets/vmware3.png" style="height:480px" /></a><br />
+4. نام و محل ذخیره ماشین مجازی را مشخص کنید و <code>Next</code> را بزنید. توجه کنید که در محل ذخیره انتخاب شده حداقل <code>50</code> گیگابایت فضای خالی وجود داشته باشد.<br />
+<a class="glightbox" href="../assets/vmware4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware1" src="../assets/vmware4.png" style="height:480px" /></a><br />
+5. در اینجا <code>Maximum Disk Size</code> را بر روی <code>50</code> گیگابایت قرار داده و <code>Next</code> را بزنید.  </p>
+<p><a class="glightbox" href="../assets/vmware5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware1" src="../assets/vmware5.png" style="height:480px" /></a><br />
+6. در این صفحه <code>Customize Hardware</code> را انتخاب کنید.  </p>
+<p><a class="glightbox" href="../assets/vmware6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware1" src="../assets/vmware6.png" style="height:480px" /></a><br />
+7. <code>Memory</code> را حداقل بر روی <code>4</code> گیگابایت قرار دهید.  </p>
+<p><a class="glightbox" href="../assets/vmware7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware1" src="../assets/vmware7.png" style="height:480px" /></a><br />
+8. <code>Number of cores per processor</code> را حداقل بر روی <code>2</code> هسته قرار دهید.  </p>
+<p><a class="glightbox" href="../assets/vmware8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware1" src="../assets/vmware8.png" style="height:480px" /></a><br />
+9. در پایین صفحه بر روی <code>...Add</code> کلیک کنید و یک <code>Network Adapter</code> اضافه کنید.  </p>
+<p><a class="glightbox" href="../assets/vmware9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware1" src="../assets/vmware9.png" style="height:480px" /></a><br />
+10. در تنظیمات <code>Network Adapter 2</code> نوع آن را بر روی <code>Host-only</code> قرار دهید.  </p>
+<p><a class="glightbox" href="../assets/vmware10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware1" src="../assets/vmware10.png" style="height:480px" /></a><br />
+11. <code>Close</code> و سپس <code>Finish</code> را بزنید و صبر کنید تا ماشین مجازی اجرا شود.  </p>
+<h2 id="ossim">نصب OSSIM</h2>
+<p>اکنون که ماشین مجازی ساخته شده و پیکربندی آن هم انجام شده به سراغ اصل کار یعنی نصب OSSIM و پیکربندی آن در داخل ماشین مجازی می‌رویم.</p>
+<ol>
+<li>پس از بالا آمدن ماشین مجازی، با صفحه زیر روبرو خواهید شد. گزینه اول یعنی Install AlienVault OSSIM را انتخاب کنید و با زدن کلید Enter به مرحله بعد بروید.  </li>
+</ol>
+<p><a class="glightbox" href="../assets/OSSIM1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim1" src="../assets/OSSIM1.png" style="height:480px" /></a><br />
+2. تنظیمات زبان، منطقه و کیبورد را انجام دهید.  </p>
+<p><a class="glightbox" href="../assets/OSSIM2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim2" src="../assets/OSSIM2.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/OSSIM3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim3" src="../assets/OSSIM3.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/OSSIM4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim4" src="../assets/OSSIM4.png" style="height:480px" /></a><br />
+3. در اینجا باید کارت شبکه مجازی NAT که در تنظیمات VMware مشخص کردید را انتخاب کنید. اگر مطابق این آموزش جلو آمده باشید، اولین کارت شبکه که بر روی اینترفیس eth0 قرار دارد همان کارت شبکه NAT است. آن را انتخاب کنید و به مرحله بعد بروید.  </p>
+<p><a class="glightbox" href="../assets/OSSIM5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim5" src="../assets/OSSIM5.png" style="height:480px" /></a><br />
+برای دیدن تنظیمات مربوط به کارت شبکه IP آنها، از منوی بالای VMware  وارد Edit و سپس Virtual Network Editor شوید.  </p>
+<p><a class="glightbox" href="../assets/vmware11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware11" src="../assets/vmware11.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/vmware12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vmware12" src="../assets/vmware12.png" style="height:480px" /></a><br />
+4. IP اینترفیس NAT را وارد کنید. در اینجا این IP برای ما 192.168.88.1 است.  </p>
+<p><a class="glightbox" href="../assets/OSSIM6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim6" src="../assets/OSSIM6.png" style="height:480px" /></a><br />
+5. netmask را وارد کنید.  </p>
+<p><a class="glightbox" href="../assets/OSSIM7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim7" src="../assets/OSSIM7.png" style="height:480px" /></a><br />
+6. IP Gateway را وارد کنید. Gateway اینترفیس NAT برای ما مطابق با تنظیمات VMware برابر 192.168.88.2 است.  </p>
+<p><a class="glightbox" href="../assets/OSSIM8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim8" src="../assets/OSSIM8.png" style="height:480px" /></a><br />
+7. در اینجا باید آدرس DNS را وارد کنید. میتوانید تا 3 آدرس DNS که با یک فاصله از هم جدا شده اند را وارد کنید. ما 192.168.88.2 و 8.8.8.8 را وارد می‌کنیم.  </p>
+<p><a class="glightbox" href="../assets/OSSIM9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim9" src="../assets/OSSIM9.png" style="height:480px" /></a><br />
+8. یک رمز عبور برای کاربر root انتخاب کنید و به مرحله بعد بروید.  </p>
+<p><a class="glightbox" href="../assets/OSSIM10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim10" src="../assets/OSSIM10.png" style="height:480px" /></a><br />
+9. منطقه زمانی را انتخاب کنید. ما Eastern را انتخاب می‌کنیم.  </p>
+<p><a class="glightbox" href="../assets/OSSIM12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim12" src="../assets/OSSIM12.png" style="height:480px" /></a><br />
+10. صبر کنید تا عملیات نصب انجام شود. این مرحله بسته به قدرت سخت افزاری شما ممکن است از 15 الی 45 دقیقه به طول انجامد.  </p>
+<p><a class="glightbox" href="../assets/OSSIM13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim13" src="../assets/OSSIM13.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/OSSIM14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim14" src="../assets/OSSIM14.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/OSSIM15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim15" src="../assets/OSSIM15.png" style="height:480px" /></a><br />
+11. پس از اتمام نصب با صفحه زیر روبرو خواهید شد. نام کاربری root و رمز عبوری که در مرحله 8 ایجاد کردید را وارد کرده و لاگین کنید.  </p>
+<p><a class="glightbox" href="../assets/OSSIM16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim16" src="../assets/OSSIM16.png" style="height:480px" /></a><br />
+12. پس از ورود به صفحه تنظیمات باید آدرس Web UI را تنظیم کنیم. همانطور که گفتیم از آنجا که آدرس 192.168.88.1 مربوط به اینترفیس NAT هست، نمیتوان با آن از طریق مرورگر به صفحه تحت وب OSSIM وارد شد و باید اینترفیس دیگری را به این کار اختصاص دهیم. ما از اینترفیس Host-Only که در ابتدای کار در تنظیمات VMware ایجاد کردیم برای این کار استفاده می‌کنیم.<br />
+13. به ترتیب وارد System Preferences &gt; Configure Network &gt; Setup Management Network شده و با استفاده از کلید Space، اینترفیس eth1 که مربوط به کارت شبکه Host-Only است را انتخاب کرده و با زدن Enter وارد تنظیمات آن شوید.  </p>
+<p><a class="glightbox" href="../assets/OSSIM17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim17" src="../assets/OSSIM17.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/OSSIM18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim18" src="../assets/OSSIM18.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/OSSIM19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim19" src="../assets/OSSIM19.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/OSSIM20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim20" src="../assets/OSSIM20.png" style="height:480px" /></a><br />
+14. در اینجا باید یک IP در رنج IP اینترفیس Host-Only که برای ورود به صفحه تحت وب OSSIM استفاده می‌شود را وارد کنید. آدرس IP اینترفیس Host-Only در تنظیمات VMware برای ما 192.168.58.1 است که ما آی پی 192.168.58.10 را برای Web UI انتخاب می‌کنیم.  </p>
+<p><a class="glightbox" href="../assets/OSSIM21.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim21" src="../assets/OSSIM21.png" style="height:480px" /></a><br />
+15. netmask متناسب را وارد کنید. در اینجا ما 255.255.255.0 را وارد می‌کنیم.  </p>
+<p><a class="glightbox" href="../assets/OSSIM22.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim22" src="../assets/OSSIM22.png" style="height:480px" /></a><br />
+16. Gateway را بر روی آدرس Gateway اینترفیس NAT قرار دهید. این آدرس برای ما 192.168.88.2 است.  </p>
+<p><a class="glightbox" href="../assets/OSSIM23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim23" src="../assets/OSSIM23.png" style="height:480px" /></a><br />
+17. با زدن Back به صفحه اول تنظیمات برگشته و گزینه آخر یعنی Apply all Changes را بزنید تا تنظیمات اعمال شوند.  </p>
+<p><a class="glightbox" href="../assets/OSSIM24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim24" src="../assets/OSSIM24.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/OSSIM25.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ossim25" src="../assets/OSSIM25.png" style="height:480px" /></a><br />
+18. پس از اعمال تنظیمات، با استفاده از آدرسی که در مرحله 14 انتخاب کردید وارد صفحه تحت وب OSSIM شوید. این آدرس برای ما https://192.168.58.10 است. در اولین ورود باید نام، رمز عبور و ایمیل موردنظر را برای کاربر Admin به منظور ورود به کنسول مدیریت تحت وب OSSIM تعریف کنید. پس از آن می‌توانید با نام کاربری Admin و رمزعبور انتخاب شده، وارد کنسول تحت وب OSSIM شوید.</p>
+<p><a class="glightbox" href="../assets/WebUI.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="WebUI" src="../assets/WebUI.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/WebUI2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="WebUI" src="../assets/WebUI2.png" style="height:480px" /></a>
+<a class="glightbox" href="../assets/WebUI3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="WebUI" src="../assets/WebUI3.png" style="height:480px" /></a></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  برگشت به بالا
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/MSadegh-Sharifi" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u06a9\u067e\u06cc \u0634\u062f", "clipboard.copy": "\u06a9\u067e\u06cc \u06a9\u0631\u062f\u0646", "search.result.more.one": "1 \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.more.other": "# \u0645\u0648\u0631\u062f \u062f\u06cc\u06af\u0631 \u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647", "search.result.none": "\u0633\u0646\u062f\u06cc \u06cc\u0627\u0641\u062a \u0646\u0634\u062f", "search.result.one": "1 \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.other": "# \u0633\u0646\u062f \u06cc\u0627\u0641\u062a \u0634\u062f", "search.result.placeholder": "\u0628\u0631\u0627\u06cc \u0634\u0631\u0648\u0639 \u062c\u0633\u062a\u062c\u0648 \u062a\u0627\u06cc\u067e \u06a9\u0646\u06cc\u062f", "search.result.term.missing": "\u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a", "select.version": "\u0627\u0646\u062a\u062e\u0627\u0628 \u0648\u06cc\u0631\u0627\u06cc\u0634"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
